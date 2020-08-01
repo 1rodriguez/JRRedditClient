@@ -15,6 +15,7 @@
 		4397FBF724D37D2200F3FD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4397FBF524D37D2200F3FD9D /* LaunchScreen.storyboard */; };
 		4397FBFF24D4B69900F3FD9D /* RedditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */; };
 		4397FC0124D4E46500F3FD9D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397FC0024D4E46500F3FD9D /* RequestManager.swift */; };
+		4397FC0824D5900B00F3FD9D /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4397FC0724D5900B00F3FD9D /* Secrets.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		4397FBF824D37D2200F3FD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditResponse.swift; sourceTree = "<group>"; };
 		4397FC0024D4E46500F3FD9D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
+		4397FC0724D5900B00F3FD9D /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,10 +65,10 @@
 				4397FBEA24D37D1100F3FD9D /* AppDelegate.swift */,
 				4397FBEC24D37D1100F3FD9D /* SceneDelegate.swift */,
 				4397FBEE24D37D1100F3FD9D /* ViewController.swift */,
-				4397FBF024D37D1100F3FD9D /* Main.storyboard */,
+				4397FC0424D58D8600F3FD9D /* Storyboards */,
 				4397FBF324D37D2200F3FD9D /* Assets.xcassets */,
-				4397FBF524D37D2200F3FD9D /* LaunchScreen.storyboard */,
 				4397FBF824D37D2200F3FD9D /* Info.plist */,
+				4397FC0724D5900B00F3FD9D /* Secrets.plist */,
 				4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */,
 				4397FC0324D4E47D00F3FD9D /* Models */,
 			);
@@ -79,6 +81,15 @@
 				4397FC0024D4E46500F3FD9D /* RequestManager.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		4397FC0424D58D8600F3FD9D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				4397FBF024D37D1100F3FD9D /* Main.storyboard */,
+				4397FBF524D37D2200F3FD9D /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4397FC0824D5900B00F3FD9D /* Secrets.plist in Resources */,
 				4397FBF724D37D2200F3FD9D /* LaunchScreen.storyboard in Resources */,
 				4397FBF424D37D2200F3FD9D /* Assets.xcassets in Resources */,
 				4397FBF224D37D1100F3FD9D /* Main.storyboard in Resources */,
