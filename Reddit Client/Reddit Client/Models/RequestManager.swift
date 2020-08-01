@@ -8,6 +8,9 @@
 
 import Foundation
 
-struct AuthenticationManager {
+struct RequestManager {
+    
+    
+    
     
 }
