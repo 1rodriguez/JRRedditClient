@@ -14,7 +14,7 @@
 		4397FBF424D37D2200F3FD9D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4397FBF324D37D2200F3FD9D /* Assets.xcassets */; };
 		4397FBF724D37D2200F3FD9D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4397FBF524D37D2200F3FD9D /* LaunchScreen.storyboard */; };
 		4397FBFF24D4B69900F3FD9D /* RedditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */; };
-		4397FC0124D4E46500F3FD9D /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397FC0024D4E46500F3FD9D /* AuthenticationManager.swift */; };
+		4397FC0124D4E46500F3FD9D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397FC0024D4E46500F3FD9D /* RequestManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +27,7 @@
 		4397FBF624D37D2200F3FD9D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4397FBF824D37D2200F3FD9D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditResponse.swift; sourceTree = "<group>"; };
-		4397FC0024D4E46500F3FD9D /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		4397FC0024D4E46500F3FD9D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,7 +76,7 @@
 		4397FC0324D4E47D00F3FD9D /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				4397FC0024D4E46500F3FD9D /* AuthenticationManager.swift */,
+				4397FC0024D4E46500F3FD9D /* RequestManager.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -155,7 +155,7 @@
 				4397FBEF24D37D1100F3FD9D /* ViewController.swift in Sources */,
 				4397FBEB24D37D1100F3FD9D /* AppDelegate.swift in Sources */,
 				4397FBFF24D4B69900F3FD9D /* RedditResponse.swift in Sources */,
-				4397FC0124D4E46500F3FD9D /* AuthenticationManager.swift in Sources */,
+				4397FC0124D4E46500F3FD9D /* RequestManager.swift in Sources */,
 				4397FBED24D37D1100F3FD9D /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

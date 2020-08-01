@@ -13,8 +13,33 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        getIdentity()
         
-        refreshToken()
+    }
+    
+    func getIdentity() {
+        let url = URL(string: "https://oauth.reddit.com/api/v1/me")!
+        
+        let clientToken = "586676600006-0TeEL55sjF2u-vWxRvvJJSLRHws"
+        let unicode = clientToken.data(using: .utf8)
+        let encoded = unicode!.base64EncodedString()
+        
+        var request = URLRequest(url: url)
+        request.httpMethod = "GET"
+        request.addValue("bearer " + clientToken, forHTTPHeaderField: "Authorization")
+        
+        
+        let session = URLSession(configuration: .default)
+        let dataTask = session.dataTask(with: request) { (data, response, error) in
+            if let safeData = data {
+                let json = try? JSONSerialization.jsonObject(with: safeData, options: .allowFragments)
+                
+                if let successfulJSON = json {
+                    print(successfulJSON)
+                }
+            }
+        }
+        dataTask.resume()
     }
     
     func refreshToken() {
