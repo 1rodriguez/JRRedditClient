@@ -8,6 +8,36 @@
 
 import Foundation
 
+fileprivate enum RequestType {
+    case tokenRetrieve
+    case tokenRefresh
+    case other
+}
+
+fileprivate struct RequestDirector {
+    var builder: RequestBuilder?
+    
+    init(builder: RequestBuilder) {
+        self.builder = builder
+    }
+    
+    mutating func changeBuilder(builder: RequestBuilder) {
+        self.builder = builder
+    }
+    
+    func make(type: RequestType) {
+        
+    }
+}
+
+fileprivate struct RequestBuilder {
+//    var request: URLRequest?
+//
+//    init(request: URLRequest) {
+//        self.request = request
+//    }
+}
+
 struct RequestManager {
     
     func getIdentity() {
