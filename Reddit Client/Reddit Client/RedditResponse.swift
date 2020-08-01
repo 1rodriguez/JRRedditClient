@@ -8,19 +8,11 @@
 
 import Foundation
 
-//{
-//    "access_token": Your access token,
-//    "token_type": "bearer",
-//    "expires_in": Unix Epoch Seconds,
-//    "scope": A scope string,
-//    "refresh_token": Your refresh token
-//}
-
 
 struct RedditResponse: Decodable {
     var access_token: String
     var token_type: String
-    var expires_in: String
+    var expires_in: Int
     var scope: String
-//    var refresh_token: String?
+    var refresh_token: String? // refresh_token only present in token retrieval, not refresh
 }

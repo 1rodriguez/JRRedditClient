@@ -9,13 +9,13 @@
 import Foundation
 
 fileprivate enum RequestType {
-    case tokenRetrieve
-    case tokenRefresh
+    case authorization
+    case refresh
     case other
 }
 
 fileprivate struct RequestDirector {
-    var builder: RequestBuilder?
+    private var builder: RequestBuilder?
     
     init(builder: RequestBuilder) {
         self.builder = builder
@@ -26,26 +26,74 @@ fileprivate struct RequestDirector {
     }
     
     func make(type: RequestType) {
-        
+        switch type {
+        case .authorization:
+            return
+        case .refresh:
+            return
+        default:
+            return
+        }
     }
 }
 
-fileprivate struct RequestBuilder {
-//    var request: URLRequest?
-//
-//    init(request: URLRequest) {
-//        self.request = request
-//    }
+private protocol RequestBuilder {
+    
+    func reset()
+    func makeHeader()
+    func makeBody()
 }
 
+extension RequestBuilder {
+    func reset() {
+        return
+    }
+}
+
+/**
+ Handles both initial token retrieval and refresh token retrieval
+ */
+fileprivate struct TokenRequestBuilder: RequestBuilder {
+    private var result: URLRequest {
+        return URLRequest(url: URL(string: "b")!)
+    }
+    
+    private var baseURL: URL {
+        return URL(string: "b")!
+    }
+    
+    func makeHeader() {
+        
+    }
+    
+    func makeBody() {
+        
+    }
+    
+}
+/**
+ Handles requests to oauth.reddit.com
+ */
+fileprivate struct RedditRequestBuilder: RequestBuilder {
+    private var result: URLRequest {
+        return URLRequest(url: URL(string: "b")!)
+    }
+    
+    func makeHeader() {
+        
+    }
+    
+    func makeBody() {
+        
+    }
+    
+}
 struct RequestManager {
     
     func getIdentity() {
         let url = URL(string: "https://oauth.reddit.com/api/v1/me")!
         
         let clientToken = "586676600006-UEPWWz2BSXvKls31-dyTWMyswxs"
-        let unicode = clientToken.data(using: .utf8)
-        let encoded = unicode!.base64EncodedString()
         
         var request = URLRequest(url: url)
         request.httpMethod = "GET"
@@ -76,7 +124,7 @@ struct RequestManager {
         
         let query = components.url!.query
         
-        let clientId = "jLY0sGcY8DY2iA:"
+        let clientId = "jLY0sGcY8DY2iA:" // refactor out of refreshToken, basically a constant
         let unicode = clientId.data(using: .utf8)
         let encoded = unicode!.base64EncodedString()
         
