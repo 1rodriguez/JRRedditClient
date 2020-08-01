@@ -16,6 +16,7 @@
 		4397FBFF24D4B69900F3FD9D /* RedditResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */; };
 		4397FC0124D4E46500F3FD9D /* RequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4397FC0024D4E46500F3FD9D /* RequestManager.swift */; };
 		4397FC0824D5900B00F3FD9D /* Secrets.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4397FC0724D5900B00F3FD9D /* Secrets.plist */; };
+		43B9DE5F24D5E18700D78E25 /* K.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B9DE5E24D5E18700D78E25 /* K.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedditResponse.swift; sourceTree = "<group>"; };
 		4397FC0024D4E46500F3FD9D /* RequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestManager.swift; sourceTree = "<group>"; };
 		4397FC0724D5900B00F3FD9D /* Secrets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Secrets.plist; sourceTree = "<group>"; };
+		43B9DE5E24D5E18700D78E25 /* K.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = K.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +73,7 @@
 				4397FC0724D5900B00F3FD9D /* Secrets.plist */,
 				4397FBFE24D4B69900F3FD9D /* RedditResponse.swift */,
 				4397FC0324D4E47D00F3FD9D /* Models */,
+				43B9DE5E24D5E18700D78E25 /* K.swift */,
 			);
 			path = "Reddit Client";
 			sourceTree = "<group>";
@@ -167,6 +170,7 @@
 				4397FBEF24D37D1100F3FD9D /* ViewController.swift in Sources */,
 				4397FBEB24D37D1100F3FD9D /* AppDelegate.swift in Sources */,
 				4397FBFF24D4B69900F3FD9D /* RedditResponse.swift in Sources */,
+				43B9DE5F24D5E18700D78E25 /* K.swift in Sources */,
 				4397FC0124D4E46500F3FD9D /* RequestManager.swift in Sources */,
 				4397FBED24D37D1100F3FD9D /* SceneDelegate.swift in Sources */,
 			);
